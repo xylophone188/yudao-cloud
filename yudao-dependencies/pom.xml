@@ -83,6 +83,12 @@
         <jimureport.version>1.6.6-beta2</jimureport.version>
         <xercesImpl.version>2.12.2</xercesImpl.version>
         <weixin-java.version>4.6.0</weixin-java.version>
+        <gson.version>2.10.1</gson.version>
+        <qiniu.version>7.15.0</qiniu.version>
+        <pagehelper.version>6.1.0</pagehelper.version>
+        <emoji-java.version>5.1.1</emoji-java.version>
+        <cos_api.version>5.6.210</cos_api.version>
+        <commonmark.version>0.22.0</commonmark.version>
     </properties>
 
     <dependencyManagement>
@@ -678,6 +684,53 @@
                 <groupId>xerces</groupId>
                 <artifactId>xercesImpl</artifactId>
                 <version>${xercesImpl.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.qiniu/qiniu-java-sdk -->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${qiniu.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.vdurmont/emoji-java -->
+            <dependency>
+                <groupId>com.vdurmont</groupId>
+                <artifactId>emoji-java</artifactId>
+                <version>${emoji-java.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.qcloud/cos_api -->
+            <dependency>
+                <groupId>com.qcloud</groupId>
+                <artifactId>cos_api</artifactId>
+                <version>${cos_api.version}</version>
+            </dependency>
+            <!--markdown处理-->
+            <!-- https://mvnrepository.com/artifact/org.commonmark/commonmark -->
+            <dependency>
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark</artifactId>
+                <version>${commonmark.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.commonmark/commonmark-ext-gfm-tables -->
+            <dependency>
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark-ext-gfm-tables</artifactId>
+                <version>${commonmark.version}</version>
             </dependency>
 
         </dependencies>
